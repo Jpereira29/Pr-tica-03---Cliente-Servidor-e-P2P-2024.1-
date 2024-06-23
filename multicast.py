@@ -71,11 +71,11 @@ def servidor():
 
 if __name__ == '__main__':
   user_type = sys.argv[1]
-  user_name = sys.argv[2]
 
   if user_type == 'servidor':
     servidor()
   elif user_type == 'cliente':
+    user_name = sys.argv[2]
     cliente(user_name)
   else:
     print("Tipo de usuário inválido. Use 'servidor' ou 'cliente'.")
